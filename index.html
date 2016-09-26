@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>AFSE’s Stop & Frisk Lab</title>
+</head>
+<body>
+<h2>Introduction</h2>
+This lab consists of both a written component and coded component.
+<h3>Guide</h3>
+For the written component, please use one of the guides to record your written responses in the lab. 
+<ul>
+<li><a target=“_blank" href="https://docs.google.com/document/d/1KiOZbCxGtSzsiiu4Wc5DBBxS4GUPpIeipGN15B2li2k">Stop & Frisk - Guide (Bronx)</a></li>
+<li><a target=“_blank" href="https://docs.google.com/document/d/1CFu8MqhPxYT4-Wodru1YQsDynyRiDzY0pKLI3WGG_rc">Stop & Frisk - Guide (Brooklyn)</a></li>
+<li><a target=“_blank" href="https://docs.google.com/document/d/1_dXBAiZWLKTBKXS3IPFVSWZhecf8sE0nyMscQjLF9-0">Stop & Frisk - Guide (Manhattan)</a></li>
+<li><a target=“_blank" href="https://docs.google.com/document/d/1dI-3wl4rHeXSStLpq8BylSzCmHxEWZ7cYrXFEwjaP6I">Stop & Frisk - Guide (Queens)</a></li>
+<li><a target=“_blank" href="https://docs.google.com/document/d/1vU6o3w7K5O0L_LNwoMBNenovY_r5m5fmqnDtcDu44qY">Stop & Frisk - Guide (Staten Island)</a></li>
+</ul>
+<h3>Code & Data</h3>
+For the coded component, please download the following code and data files via the <a  target=“_blank" href="https://drive.google.com/open?id=0BxrIIwTqQY_JSnhiLV8yTWRsblk">Stop and Frisk Starter Project (StopAndFriskStarter.zip)</a>. This project contains the following:
+<ul>
+<li>StopFrisk BlueJ Project that contains</li>
+    <ul>
+    <li>Classes</li>
+        <ul>
+        <li>StdDraw - A class that provides methods to draw dots and other shapes on the screen; SHOULD NOT BE MODIFIED DURING THE COMPLETION OF THIS LAB</li>
+        <li>SFFileParser - A class that provides a method for reading in a data file and returning an array of SFDataPts contained in the file; SHOULD NOT BE MODIFIED DURING THE COMPLETION OF THIS LAB</li>
+        <li>SFDataPt - A class representing a single data point from your data set; You will help define instance variables, constructor, and methods to achieve the goals of this part of the lab</li>
+        <li>SFVisualizer - A class responsible for reading in a data file and visualizing the data; You will edit existing methods in this class to achieve the visualization-related goals of this part of the lab</li>
+        <li>SFFactFinder - A class responsible for reading in a data file and printing out relevant facts from the data; You will edit existing methods to answer the question-related goals of this part of the lab</li>
+        </uL>
+    <li>Data Files</li>
+        <ul>
+        <li>2013_cleaned_sample.csv - A data file containing a small sample of data points from the NYPD's stop and frisk data set from 2013; Useful for testing and debugging purposes</li>
+        <li>2014_cleaned_sample.csv - A data file containing a small sample of data points from the NYPD's stop and frisk data set from 2014; Useful for testing and debugging purposes</li>
+        <li>2013_cleaned.csv - A data file containing ALL stop and frisk data points from the NYPD's stop and frisk data set from 2013</li>
+        <li>2014_cleaned.csv - A data file containing ALL stop and frisk data points from the NYPD's stop and frisk data set from 2014</li>
+        </ul>
+    </ul>
+<li>Libs Folder that contians</li>
+    <ul>
+    <li>opencsv-3.6.jar - A library for reading the data files; MUST BE LOADED AS A LIBRARY IN BLUEJ</li>
+    </ul>
+</ul>
+<h3>Helpful Links</h3>
+The following links will be helpful in completing the written and coded portion of your lab.
+<ul>
+<li>2013</li>
+    <ul>
+    <li><a target=“_blank" href="https://drive.google.com/open?id=18Qm_ge7cGRH-MZpz3YnR7KfQQ5X-XTkjhe4HL-SLHwc">2013 Stop and Frisk Data File Specification</a></li>
+    <li><a target=“_blank" href="https://drive.google.com/open?id=137VVj9j6vzlkB-GAJB5PA4B8FneRmzEni-TEBlc9bxU">2013_cleaned_sample.csv (Viewable as Spreadsheet)</a></li>
+    </ul>
+<li>2014</li>
+    <ul>
+    <li><a target=“_blank" href="https://drive.google.com/open?id=1KW-jQNV7moxMXMoNodEzPdCUZ_4AAh1FPzUIcdmVyu0">2014 Stop and Frisk Data File Specification</a></li>
+    <li><a target=“_blank" href="https://drive.google.com/open?id=1nWI2m1a38UowApBSQstE6ZvE-Exc-rWYTuy_B8j7jpI">2014_cleaned_sample.csv (Viewable as Spreadsheet)</a></li>
+    </ul>
+</ul>
+<h2>Description</h2>
+<h3>Part 0: Basic Visualization & Introductory Fact Finding</h3>
+In this part of the lab, you will be responsible for writing code that will enable you to:
+<ul>
+<li>visualize the locations of the stops recorded by the NYPD in the Stop, Question, and Frisk Report Database by</li>
+    <ul>
+    <li>determining the range of x and y coordinates in the data set</li>
+    <li>drawing each point at the appropriate x and y coordinate</li>
+    </ul>
+<li>answer questions about differing treatment of suspects in the database based on their identified race including</li>
+    <ul>
+    <li>How do the total number of stops involving a suspect of a particular race compare to the overall population?</li>
+    <li>On average, how long are stop suspects of a particular race stopped for?</li>
+    <li>On average, how long are stop suspects of a particular race charged with a crime?</li>
+    <li>On average, how often are stop suspects of a particular race subject to use of physical force by police officers?</li>
+    </ul>
+</li>
+</ul>
+<h3>Part 1: Animated Visualization & Independent Fact Finding</h3>
+In this part of the lab, you will be responsible for writing code that will enable you to:
+<ul>
+<li>animate your visualization to show the stops involving all suspects of a given race (e.g. show all stops involving Asian/Pacific Islander suspects in PINK, then show all stops involving Black suspects in BLUE, then show all stops involving Hispanic suspects in RED, etc.)</li>
+<li>brainstorm and write code to answer TWO of your OWN questions about your data set that </li>
+    <ul>
+    <li>would help determine the extent to which stop and frisk is racially discriminatory</li>
+    <li>utilize at least 4 different columns of data NOT YET examined in part 0</li>
+    </ul>
+</ul>
+<h3>Part 2: Advanced Animation</h3>
+In the summer of 2013, the NYPD's implementation of stop and frisk was <a target="_blank" href="https://www.washingtonpost.com/news/post-politics/wp/2013/08/12/judge-says-new-yorks-stop-and-frisk-law-unconstitutional/">ruled unconstitutional</a> because it was "a form of racial profiling" with a disproportionate focus on Black and Hispanic New Yorkers. As a result, the NYPD was ordered to revise its stop and frisk policy.<br/><br/>
+
+In this lab, you will be responsible for writing code that will help you determine if these revisions to the stop and frisk policy have changed how officers actually conduct stop and frisk. To do so, create an animation that shows all the change in stop and frisks across time in New York.
+</body>
+</html>
